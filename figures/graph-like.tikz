@@ -1,0 +1,66 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0) {};
+		\node [style=none] (1) at (0, -1) {};
+		\node [style=none] (2) at (0, -2) {};
+		\node [style=Z phase dot] (4) at (1.5, 0) {$\frac{5\pi}{3}$};
+		\node [style=Z phase dot] (7) at (1.5, -1) {$\frac{5\pi}{4}$};
+		\node [style=Z dot] (9) at (2.5, 1) {};
+		\node [style=Z dot] (15) at (4.5, 1) {};
+		\node [style=Z phase dot] (28) at (5.5, 0) {$\frac{5\pi}{3}$};
+		\node [style=Z dot] (33) at (6.5, 1) {};
+		\node [style=Z phase dot] (37) at (9.5, 0) {$\frac{\pi}{4}$};
+		\node [style=Z dot] (42) at (7.5, 1) {};
+		\node [style=Z dot] (45) at (1.5, -2) {};
+		\node [style=Z dot] (46) at (8.5, 1) {};
+		\node [style=Z phase dot] (50) at (9.5, -1) {$\pi$};
+		\node [style=none] (56) at (11, 0) {};
+		\node [style=none] (57) at (11, -1) {};
+		\node [style=none] (58) at (11, -2) {};
+		\node [style=Z phase dot] (61) at (2.5, 2) {$\frac{3\pi}{4}$};
+		\node [style=Z phase dot] (62) at (7.5, 2) {$\frac{7\pi}{4}$};
+		\node [style=Z phase dot] (63) at (4.5, 2) {$\frac{\pi}{4}$};
+		\node [style=Z phase dot] (64) at (8.5, 2) {$\frac{7\pi}{4}$};
+		\node [style=Z phase dot] (65) at (3.5, 2) {$\frac{7\pi}{4}$};
+		\node [style=Z phase dot] (66) at (6.5, 2) {$\frac{\pi}{4}$};
+		\node [style=Z dot] (67) at (9.5, -2) {};
+		\node [style=hadamard] (68) at (0.5, 0) {};
+		\node [style=hadamard] (69) at (0.5, -2) {};
+		\node [style=hadamard] (70) at (10.5, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (4);
+		\draw (1.center) to (7);
+		\draw (2.center) to (45);
+		\draw [style=hadamard edge] (4) to (65);
+		\draw [style=hadamard edge] (7) to (9);
+		\draw [style=hadamard edge] (7) to (46);
+		\draw [style=hadamard edge] (7) to (50);
+		\draw [style=hadamard edge] (7) to (33);
+		\draw [style=hadamard edge] (7) to (45);
+		\draw [style=hadamard edge] (9) to (61);
+		\draw [style=hadamard edge] (9) to (45);
+		\draw [style=hadamard edge] (15) to (63);
+		\draw [style=hadamard edge] (15) to (45);
+		\draw [style=hadamard edge] (15) to (65);
+		\draw [style=hadamard edge] (28) to (37);
+		\draw [style=hadamard edge] (28) to (65);
+		\draw [style=hadamard edge] (33) to (37);
+		\draw [style=hadamard edge] (33) to (66);
+		\draw [style=hadamard edge] (33) to (45);
+		\draw [style=hadamard edge] (33) to (65);
+		\draw [style=hadamard edge] (37) to (42);
+		\draw [style=hadamard edge] (37) to (46);
+		\draw (37) to (56.center);
+		\draw [style=hadamard edge] (37) to (50);
+		\draw [style=hadamard edge] (42) to (45);
+		\draw [style=hadamard edge] (42) to (62);
+		\draw [style=hadamard edge] (45) to (65);
+		\draw [style=hadamard edge] (45) to (67);
+		\draw [style=hadamard edge] (46) to (64);
+		\draw [style=hadamard edge] (46) to (65);
+		\draw (50) to (57.center);
+		\draw [style=hadamard edge] (50) to (65);
+		\draw (58.center) to (67);
+	\end{pgfonlayer}
+\end{tikzpicture}
