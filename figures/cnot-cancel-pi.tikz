@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=X dot] (23) at (12, -1) {};
+		\node [style=Z dot] (24) at (12, 0) {};
+		\node [style=X dot] (26) at (14, -1) {};
+		\node [style=Z dot] (27) at (14, 0) {};
+		\node [style=none] (28) at (15, 0) {};
+		\node [style=none] (29) at (15, -1) {};
+		\node [style=none] (30) at (11, -1) {};
+		\node [style=none] (31) at (11, 0) {};
+		\node [style=none] (32) at (17, -0.5) {};
+		\node [style=none] (33) at (17, -0.5) {$=$};
+		\node [style=none] (34) at (17, 0) {};
+		\node [style=none] (35) at (17, 0.05) {$(f,hopf,id)$};
+		\node [style=none] (40) at (22, 0) {};
+		\node [style=none] (41) at (22, -1) {};
+		\node [style=none] (42) at (19, -1) {};
+		\node [style=none] (43) at (19, 0) {};
+		\node [style=X phase dot] (44) at (13, -1) {$\pi$};
+		\node [style=X phase dot] (45) at (20.5, -1) {$\pi$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (23) to (24);
+		\draw (24) to (27);
+		\draw (26) to (27);
+		\draw (31.center) to (24);
+		\draw (27) to (28.center);
+		\draw (29.center) to (26);
+		\draw (23) to (30.center);
+		\draw (43.center) to (40.center);
+		\draw (23) to (44);
+		\draw (44) to (26);
+		\draw (42.center) to (45);
+		\draw (45) to (41.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
