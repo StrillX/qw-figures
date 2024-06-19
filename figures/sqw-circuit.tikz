@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=big gate] (0) at (2, 1) {};
+		\node [style=big gate] (1) at (6.55, 1) {Dec};
+		\node [style=big gate] (2) at (2, 1) {Inc};
+		\node [style=none] (3) at (-2.5, 1.5) {};
+		\node [style=none] (4) at (-2.7, 0.5) {};
+		\node [style=none] (5) at (1.75, 0.5) {};
+		\node [style=none] (6) at (1.75, 1.5) {};
+		\node [style=none] (7) at (2.25, 1.5) {};
+		\node [style=none] (8) at (6.3, 1.5) {};
+		\node [style=none] (9) at (6.3, 0.5) {};
+		\node [style=none] (10) at (2.25, 0.5) {};
+		\node [style=none] (12) at (-1.75, 1.85) {$\otimes n - 1$};
+		\node [style=gate] (13) at (-0.25, 0.5) {$R_x(2 \theta )$};
+		\node [style=gate] (15) at (4.3, 0.5) {$R_x(2 \theta )$};
+		\node [style=none] (16) at (6.75, 1.5) {};
+		\node [style=none] (17) at (6.75, 0.5) {};
+		\node [style=none] (18) at (8.225, 0.5) {};
+		\node [style=none] (19) at (8, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=double edge] (3.center) to (6.center);
+		\draw [style=double edge] (7.center) to (8.center);
+		\draw (4.center) to (13);
+		\draw (13) to (5.center);
+		\draw (10.center) to (15);
+		\draw (15) to (9.center);
+		\draw (17.center) to (18.center);
+		\draw [style=double edge] (16.center) to (19.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
